@@ -1,0 +1,93 @@
+body {
+    font-family: Garamond, serif;
+    background: url('https://cdn.prod.website-files.com/5e2520252e290c852ed89624/5e7c21a34149343b88c20898_Gradient-home.png');
+    background-size: 3000px;
+    background-repeat: repeat-y;
+    padding-top: 80px;
+}
+h1 {
+    font-size: 48px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+
+p, a {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+nav a {
+    text-decoration:none;
+    color: black;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+a:hover{
+    color: blue;
+}
+img{
+    width: 40px;
+    height: 40px; 
+    margin:auto; 
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+}
+.item{
+    padding: 20px;
+    display: block;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    
+}
+#education, #courses, #Projects{
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+#education:hover, #courses:hover, #Projects:hover, img:hover{
+    transform: translateY(-5px);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 70%;
+}
+hr{
+    border: none;
+    background-color: black;
+    height: 0.5px;
+    margin-top: 100px;
+}
+@media screen and (max-width:576px) {
+    h1 {
+        font-size: 32px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .navbar{
+        margin-left: 50%;
+    }
+}
+
